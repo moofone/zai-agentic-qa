@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Artifacts (generated per-run)
+artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Temp
+*.tmp
+*.log

@@ -1,0 +1,25 @@
+{
+  "name": "zai-agentic-qa",
+  "version": "0.1.0",
+  "description": "Parallel alignment tasks powered by Z.AI chat-completions",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "docs:alignment": "node ./docs-alignment/cli.mjs",
+    "fixture:alignment": "node ./fixture-alignment/cli.mjs",
+    "shared-ws:alignment": "node ./shared-ws-alignment/cli.mjs",
+    "actor-messaging:conformance": "node ./actor-messaging-conformance/cli.mjs",
+    "actor-schema:conformance": "node ./actor-schema-conformance/cli.mjs",
+    "fixture-e2e:coverage": "node ./fixture-e2e-coverage/cli.mjs",
+    "json-parsing:hygiene": "node ./json-parsing-hygiene/cli.mjs",
+    "persistence:audit": "node ./persistence-audit/cli.mjs",
+    "test:green": "node ./test-green/cli.mjs",
+    "saga:e2e": "node ./saga-workflow-e2e/cli.mjs",
+    "inbox:direct": "node ./inbox-direct-processing/cli.mjs",
+    "full-suite": "bash ./scripts/full-suite.sh",
+    "dashboard": "node ./scripts/generate-dashboard.mjs"
+  },
+  "packageManager": "pnpm@10.18.1+sha512.77a884a165cbba2d8d1c19e3b4880eee6d2fcabd0d879121e282196b80042351d5eb3ca0935fa599da1dc51265cc68816ad2bddd2a2de5ea9fdf92adbec7cd34"
+}
